@@ -1,0 +1,82 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    background-color: rgb(252, 220, 187);
+}
+
+h2 {
+    text-align: center;
+}
+
+#input {
+    height: 30px;
+    width: 70%;
+}
+
+.write {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    background-color: rgba(47, 131, 249, 0.844);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(32, 77, 214, 0.844);
+    transform: scale(1.06);
+}
+
+ul {
+    list-style: none;
+    padding: 5px;
+}
+
+li {
+    background-color: #e9ecef;
+    padding: 8px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+    margin-left: 10px;
+}
+
+li button {
+    background-color: rgb(230, 88, 57);
+    color: white;
+}
+
+
+/* Dark Mode */
+.dark {
+    background-color: rgb(35, 35, 35);
+    color: rgb(221, 215, 215);
+}
+
+.dark #container {
+    background: #605858;
+}
+
+.dark li {
+    background: #818080;
+}

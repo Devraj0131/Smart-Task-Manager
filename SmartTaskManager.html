@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager - Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div id="container">
+        <h2>Smart Notes </h2>
+        <div class="write">
+            <input type="text" id="input" placeholder="Enter task here...">
+            <button onclick="addNote()">Add</button>
+        </div>
+        <p id="message"></p>
+
+        <ul id="notelist"></ul>
+
+        <p>Total Notes: <span id="total">0</span></p>
+
+        <button onclick="toggle()">🌗Theme</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
