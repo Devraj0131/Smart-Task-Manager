@@ -44,7 +44,7 @@ function displayNote() {
         // Now, When checkbox is clicked to mark it complete 
         checkbox.addEventListener("change", function () {
             if (checkbox.checked)  // When checkbbox is clicked then a line will go through it to show task complete 
-            {
+                {
                 span.style.textDecoration = "line-through"; // using style to make the line through it
                 span.style.color = "gray"; //making the text gray 
             }
@@ -61,7 +61,6 @@ function displayNote() {
         // using Event to make it so when it is clicked to delete the task 
         deleteBtn.addEventListener("click", function () {
             notes.splice(i, 1); // here I used splice to access the index no. and remove one value from the array 
-            console.log("notes");
             displayNote();// called display here to display the change not only in console
         });
 
@@ -82,7 +81,7 @@ function toggle() {
     let body = document.getElementById("body"); //accessing the the body using id that I put in html
 
     if (body.classList.contains("dark"))  // checking if the body contains class dark or not if it contains then 
-    {
+        {
         body.classList.remove("dark"); // remove the class if clicked
     }
     else {
